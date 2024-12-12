@@ -3,87 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Besstiee - Your AI Bestie</title>
+    <title>Besstiee</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Lexend:wght@500&display=swap" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            margin: 0;
+            background-color: #BEA4F9;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             font-family: 'Lexend', sans-serif;
+            padding: 20px;
+        }
+
+        .logo-placeholder {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
+            color: rgba(0, 0, 0, 0.2);
+        }
+
+        .title {
+            font-family: 'Titan One', cursive;
+            font-size: 33px;
+            color: #Besstiee;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 24px;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            max-width: 600px;
             line-height: 1.6;
-            color: #000;
+            margin-bottom: 40px;
         }
-        header {
-            background: #BEA4F9;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            font-family: 'Titan One', sans-serif;
-        }
-        .container {
-            padding: 2rem;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .hero {
-            text-align: center;
-            padding: 4rem 0;
-            background: #FDF451;
-        }
-        .hero h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #000;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            color: #18371B;
-        }
-        .hero a {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background: #2FF851;
-            color: #000;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .hero a:hover {
-            background: #00A640;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background: #333;
-            color: #fff;
-        }
+
         .support {
-            margin-top: 2rem;
-            font-size: 1rem;
-            color: #000;
-            text-align: center;
+            color: white;
+            font-size: 0.9em;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .logo-placeholder {
+                width: 150px;
+                height: 150px;
+                margin: 20px 0;
+            }
+
+            .title {
+                font-size: 28px;
+            }
+
+            .content {
+                padding: 0 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Besstiee</h1>
-    </header>
-    <section class="hero">
-        <div class="container">
-            <h2>Here to help with all things love and relationships</h2>
-            <p>Your new AI bestie for advice, confidence, and support.</p>
-            <a href="#">Get Started</a>
-        </div>
-    </section>
-    <div class="support">
-        <p>Need help? Contact us at <a href="mailto:support@besstiee.app">support@besstiee.app</a></p>
+    <div class="logo-placeholder">
+        [Logo Here]
     </div>
-    <footer>
-        <p>&copy; 2024 Besstiee. All Rights Reserved.</p>
-    </footer>
+    
+    <h1 class="title">Besstiee</h1>
+    
+    <div class="content">
+        <p>Here to help with all things love and relationships</p>
+        <p>Your new AI bestie for advice, confidence, and support.</p>
+    </div>
+    
+    <div class="support">
+        Contact: support@besstie.app
+    </div>
 </body>
 </html>
