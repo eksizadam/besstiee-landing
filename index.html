@@ -11,7 +11,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             background-color: #BEA4F9;
             min-height: 100vh;
@@ -21,50 +20,44 @@
             font-family: 'Lexend', sans-serif;
             padding: 20px;
         }
-
-        .logo-placeholder {
+        .logo {
             width: 200px;
-            height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            height: auto;
             margin: 40px 0;
-            color: rgba(0, 0, 0, 0.2);
         }
-
         .title {
             font-family: 'Titan One', cursive;
             font-size: 33px;
-            color: #Besstiee;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            color: #FDF451;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
             margin-bottom: 24px;
         }
-
         .content {
             text-align: center;
             color: white;
             max-width: 600px;
             line-height: 1.6;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
-
         .support {
             color: white;
             font-size: 0.9em;
-            margin-top: auto;
+            margin-top: 10px;
         }
-
+        .support a {
+            color: white;
+            text-decoration: none;
+        }
+        .support a:hover {
+            text-decoration: underline;
+        }
         @media (max-width: 768px) {
-            .logo-placeholder {
+            .logo {
                 width: 150px;
-                height: 150px;
-                margin: 20px 0;
             }
-
             .title {
                 font-size: 28px;
             }
-
             .content {
                 padding: 0 20px;
             }
@@ -72,9 +65,7 @@
     </style>
 </head>
 <body>
-    <div class="logo-placeholder">
-        [Logo Here]
-    </div>
+    <img src="logo.png" alt="Besstiee Logo" class="logo">
     
     <h1 class="title">Besstiee</h1>
     
@@ -84,7 +75,7 @@
     </div>
     
     <div class="support">
-        Contact: support@besstie.app
+        <a href="mailto:support@besstie.app">support@besstie.app</a>
     </div>
 </body>
 </html>
